@@ -1,0 +1,260 @@
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+body, .onepage-wrapper, html {
+	margin: 0;
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+}
+.onepage-pagination li a{
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block;
+  
+}
+.onepage-pagination li a:before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.onepage-pagination li a.active:before{
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -4px;
+  left: 8px;
+}
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit;
+}
+.p1_pic{
+	position: relative;
+	max-width: 600px;
+	max-height: 600px;
+	width: 100%;
+	height:  100%;
+	top: 5%;
+	left: 10%;
+	float: left;
+	
+}
+.p1_text{
+	width: 50%;
+	max-width: 900px;
+	height: 100%;
+	float: right;
+	margin-top: 50px;
+	margin-right: 5%;
+	
+	
+
+}
+.p1_text h1{
+	position: relative;
+	top: 200px;
+	font-size: 54px;
+	font-weight: 700;
+color: #222222;
+line-height: 1.2;
+letter-spacing: -1px;
+}
+a {
+	text-decoration: none;
+}
+.p1_text p{
+	position: relative;
+	top: 210px;
+	font-family: Open Sans;
+font-size: 24px;
+color: #A1A1A1;
+font-weight: 400;
+line-height: 1.5;
+}
+.p1_btn{
+	position: relative;
+	top: 290px;
+	background-color: cornflowerblue;
+	border: 2px solid cornflowerblue;
+	width: 200px;height: 50px;
+	border-radius: 5px;
+	font-size: 24px;
+	
+	line-height:50px;
+	color: white;
+	text-align: center;
+}
+#btn :hover{
+	border: 2px solid blueviolet;
+	background-color: blueviolet;
+	transition-duration:1s;
+}
+.p2_pic{
+	position: relative;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	overflow: hidden;
+  filter: blur(0px); 
+
+	
+
+}
+.p3_pic{
+	position: relative;
+	max-width: 500px;
+	max-height: 500px;
+	width: 100%;
+	height:  100%;
+	top: 10%;
+	left: 60%;
+	float: left;
+
+	
+}
+.p3_text{
+	position: absolute;
+		width: 50%;
+	max-width: 900px;
+	height: 100%;
+	float: left;
+	left: 10%;
+	
+	
+}
+.p3_text h1{
+		position: relative;
+ top: 10%;
+	font-size: 54px;
+	font-weight: 700;
+color: #222222;
+line-height: 1.2;
+letter-spacing: -1px;
+	
+}
+.p3_text p{
+	position: relative;
+	top: 210px;
+	font-family: Open Sans;
+font-size: 24px;
+color: #A1A1A1;
+font-weight: 400;
+line-height: 1.5;
+}
+.p2_pic img{
+	z-index: 0;
+		border-radius: 50%;
+	margin-left: -50px;
+	width: 700px;
+	height: 500px;
+	transition-duration:0.5s;
+	
+}
+.p2_pic :hover{
+		overflow: hidden;
+	transform: scale(1.5);
+}
+.p2_text{
+  
+  height: 100%;
+   float: right;
+   
+   margin-top: 10%;
+   margin-right: 10%;
+
+}
+.p2_text h1{
+	position: relative;
+  margin-right: 30px;
+	font-size: 54px;
+	font-weight: 700;
+	width: 80%;
+color: #222222;
+line-height: 1.2;
+letter-spacing: -1px;
+	
+}
+.p2_text h2{
+		position: relative;
+	top: 100px;
+	font-family: Open Sans;
+font-size: 40px;
+color: #A1A1A1;
+font-weight: 400;
+line-height: 1.5;
+
+}
+.p2_text p{
+	margin-left: -800px;
+	margin-top: -70px;
+	font-size: 30px;
+}

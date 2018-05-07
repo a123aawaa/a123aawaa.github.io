@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta charset="utf-8">
+<title>可控温暖手宝</title>
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/pg4.css" />
+
+<style>
+
+.top{
+	top: 0;	
+	font-family: "微软雅黑";
+	
+}
+/*//导航*/
+.daohang{
+	background-color: #F3F3F3;
+	height: 60px;
+	width: 100%;
+	overflow: hidden;
+}
+.daohang ul{
+	margin-left: 140px;
+	margin-top: 0;
+}
+.daohang>ul>a>li{
+	float: left;
+	width: 80px;;
+    padding-left:10px ;
+    padding-right: 10px;
+	height: 60px;		
+	text-align: center;
+	line-height: 60px;
+	color: black;
+}
+.daohang>ul>a>:hover{
+	color: white;
+	background-color: #0099cc;	
+	
+}
+.daohang>ul>a{
+	
+	color: #ADADAD;
+}
+.daohang li{
+	text-decoration: none;
+}
+
+.page1 { background-color: #FCEEE3;}
+.page2 {background-color: #F3F3F3;}
+.page3 {}
+.page4 { background-color: #FFFFFF;}
+p.title { position: relative; top: 35%; font: 700 40px "Microsoft Yahei"; color: #fff; text-align: center;}
+</style>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/main.js" ></script>
+<script>
+$(function(){
+	$('.main').onepage_scroll({
+		sectionContainer: '.page'
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var $miaobian=$('.Xcontent08>div');
+	var $huantu=$('.Xcontent06>img');
+	var $miaobian1=$('.Xcontent26>div');
+	$miaobian.mousemove(function(){miaobian(this);});
+	$miaobian1.click(function(){miaobian1(this);});
+	function miaobian(thisMb){
+		for(var i=0; i<$miaobian.length; i++){
+			$miaobian[i].style.borderColor = '#dedede';
+		}
+		thisMb.style.borderColor = '#cd2426';
+
+		$huantu[0].src = thisMb.children[0].src;
+	}
+	function miaobian1(thisMb1){
+		for(var i=0; i<$miaobian1.length; i++){
+			$miaobian1[i].style.borderColor = '#dedede';
+		}
+//		thisMb.style.borderColor = '#cd2426';
+		$miaobian.css('border-color','#dedede');
+		thisMb1.style.borderColor = '#cd2426';
+		$huantu[0].src = thisMb1.children[0].src;
+	}
+			$(".Xcontent33").click(function(){
+			var value=parseInt($('.input').val())+1;
+       		$('.input').val(value);
+		})
+
+	$(".Xcontent32").click(function(){	
+		var num = $(".input").val()
+		if(num>0){
+			$(".input").val(num-1);
+		}			
+		
+	})
+
+})
+</script>
+</head>
+	<body class="viewing-page-1">
+		<ul class="onepage-pagination"><li><a data-index="1" href="#1" class="active"></a></li><li><a data-index="2" href="#2"></a></li><li><a data-index="3" href="#3"></a></li><li><a data-index="4" href="#4"></a></li></ul>
+<div class="main onepage-wrapper" style="position: relative;">
+	<div id="1" class="page page1 section active" style="position: absolute; top: 0%; left: 0px;" data-index="1">
+        	<div class="top">
+			<!--导航-->
+			<div class="daohang">
+				
+				<ul>
+					
+					<a href="../index.html" >
+						<li >首页</li>
+					</a>
+					<a href="#"  >
+						<li style="background-color: #0099cc;color: white;	">暖手宝</li>
+					</a>
+					<a href="../Graphene/Gpe.html" >
+						<li>概念产品</li>
+					</a>
+					<a href="gywm.html" >
+						<li>关于我们</li>
+					</a>
+					<a href="index.html#4"  >
+						<li style="margin-right: 5%;float: right;" >立即购买</li>
+					</a>
+					<a href="" >
+						<li style="background-color: #0099CC;height: 40px;margin-top: 8px;line-height: 40px;box-shadow: 0px 0px 1px black;border-radius: 2%;color: white;float: right;">搜索</li>
+					</a>
+					<li><input type="text"  style="float: right;background-color: white;border-radius: 2%;border: none;box-shadow: 0px 0px 1px black ; width:300px;line-height: 37px;margin-top: 9px;"  ></li>
+					
+					
+					
+					
+				</ul>
+			</div>
+		</div>
+		<div class="p1_pic"><img width="700px" src="img/nsb03.png"></div>
+		<div class="p1_text">
+			<h1>智能石墨烯暖手宝1.0</h1>
+			<p>传统的暖手宝并不是特别的安全与方便，而我们致力于打造<br>安全、舒适、方便的新型暖手宝，给你最舒适的感受</p>
+			<a id="btn" href="#4"><div class="p1_btn" >立即购买</div></a>
+		</div>
+	</div>
+	<div class="page page2 section" style="position: absolute; top: 100%; left: 0px;" data-index="2">
+		
+		<div class="p3_pic"><img style="width: 700px;" src="img/nsb04.png"></div>
+		<div class="p3_text">
+			<h1>我们的暖手宝<br />由最新型材料石墨烯制作</h1>
+			<p style="font-size:40px ;color: #605F5F;">石墨烯加热膜，安全、轻巧，再也不会被传统的暖手宝的所束缚，只要插上电就可以持续产生热能。</p>
+			
+			<br /><br />
+			<p>我们暖手佩戴自备的储能设备，也可以随时更换充电宝</p>
+			<p>在你使用暖手宝的同时也可以给你的手机进行充电</p>
+			<p>让你冬天玩手机也不会手冷</p>
+		</div>
+	</div>
+	
+	<div class="page page3 section" style="position: absolute; top: 200%; left: 0px;" data-index="3">
+		
+		<div >
+			<img style="position: absolute;top: 20%;left: 5%;float: right;width: 1150px;z-index: -1;height: 70%;" src="img/石墨烯效果.png" />
+			
+		</div>
+		<div class="p2_text" >
+			<p>效果图解</p>
+			<h1 style="z-index: 20;">完美的设计与搭配</h1>
+			<h2 style="z-index: 20;">我们的智能石墨烯暖手宝更具有</h2>
+			<h2 style="z-index: 20;"><span style="color: red;">美白护肤、
+			提神醒脑</span>的作用</h2>
+			<h2 style="z-index: 20;">让你冬季上课、上班再也不会困</h2>
+		</div>
+		
+		<div style="margin-top: 7%;width: 40%;height: 500px;background-color: #F3F3F3;margin-left: 55%;z-index: 0;opacity: 0.5;"></div>
+	</div>
+	<div id="4" class="page page4 section" style="position: absolute; top: 300%; left: 0px;" data-index="4">
+			<div class="top">
+			<!--导航-->
+			<div class="daohang" >
+				
+				<ul >
+					
+					<a href="../index.html" >
+						<li >首页</li>
+					</a>
+					<a href="#"  >
+						<li style="background-color: #0099cc;color: white;	">暖手宝</li>
+					</a>
+					<a href="../Graphene/Gpe.html" >
+						<li>概念产品</li>
+					</a>
+					<a href="gywm.html" >
+						<li>关于我们</li>
+					</a>
+					<a href="index.html#4"  >
+						<li style="margin-right: 5%;float: right;" >立即购买</li>
+					</a>
+					<a href="" >
+						<li style="background-color: #0099CC;height: 40px;margin-top: 8px;line-height: 40px;box-shadow: 0px 0px 1px black;border-radius: 2%;color: white;float: right;">搜索</li>
+					</a>
+					<li><input type="text"  style="float: right;background-color: white;border-radius: 2%;border: none;box-shadow: 0px 0px 1px black ; width:300px;line-height: 37px;margin-top: 9px;"  ></li>
+					
+					
+					
+					
+				</ul>
+			</div>
+		</div>
+		<div class="Xcontent">
+		<ul class="Xcontent01">
+			
+				<div class="Xcontent06"><img style="width: 423px;height: 430px;" src="img/gm4.png"></div>
+				<ol class="Xcontent08">
+					<div class="Xcontent07" style="border-color: rgb(222, 222, 222);"><img src="img/gm4.png"></div>
+					<div class="Xcontent09" style="border-color: rgb(222, 222, 222);"><img src="img/gm1.png"></div>
+					<div class="Xcontent10" style="border-color: rgb(205, 36, 38);"><img src="img/gm2.png"></div>
+					<div class="Xcontent11" style="border-color: rgb(222, 222, 222);"><img src="img/gm3.JPG"></div>
+					<div class="Xcontent12" style="border-color: rgb(222, 222, 222);"><img src="img/gm5.png"></div>
+				</ol>
+				<ol class="Xcontent13">
+					<div class="Xcontent14"><a href="#"><p>智能石墨烯暖手宝</p></a></div>
+					<div class="Xcontent15"><img src="img/X11.png"></div>
+					<div class="Xcontent16"><p>连上充电宝即可享受持续的温暖</p></div>
+					<div class="Xcontent17">
+						<p class="Xcontent18">售价</p>
+						<p class="Xcontent19">￥<span>158.00</span></p>
+						<div class="Xcontent20">
+							<p class="Xcontent21">促销</p>
+							<img src="img/X12.png">
+							<p class="Xcontent22">领10元促销礼券，满再赠好礼</p>
+						</div>
+						<div class="Xcontent23">
+							<p class="Xcontent24">服务</p>
+							<p class="Xcontent25">30天无忧退货&nbsp;&nbsp;&nbsp;&nbsp;       48小时快速退款 &nbsp;&nbsp;&nbsp;&nbsp;        满208元免邮</p>
+						</div>
+						
+					</div>
+					<div class="Xcontent26">
+						<p class="Xcontent27">颜色</p>
+						<div class="Xcontent28"><img src="img/gm1.JPG"></div>
+							<div class="Xcontent29"><img src="img/gm3.JPG"></div>
+					</div>
+					<div class="Xcontent30">
+						<p class="Xcontent31">数量</p>
+						<div class="Xcontent32"><img src="img/X15.png"></div>
+						<form>	
+            <input class="input" value="1"></form>
+						<div class="Xcontent33"><img src="img/16.png"></div>
+
+					</div>
+					<div class="Xcontent34"><a href="ljgm.html"><img src="img/X17.png"></a></div>
+					<div class="Xcontent35"><a href="gwc.html"><img src="img/X18.png"></a></div>
+				
+			</ol>
+		
+			
+			
+		</ul>
+		
+	</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
