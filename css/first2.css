@@ -1,0 +1,47 @@
+
+/*单独图片*/
+.dantupian{
+	background-color: white;
+	height: 700px;
+	width: 90%;
+	margin: 5%;
+	
+	/*border: 1px solid black;*/ 
+		background-image: url(../images/teamlogo.png);
+	background-position: 60px -160px; 
+ background-repeat: no-repeat;
+    background-size: 30%;
+
+
+}
+
+.dantupian-center{
+	width: 70%;
+	height: 500px;
+	margin: 0px auto ;
+	
+	
+
+
+}
+.dantupian-text,.dantupian-picture{
+	float: left;
+}
+.dantupian-text{
+	margin-top: 80px;
+	width: 50%;
+	height: 70%;
+
+}
+.dantupian-text h3{
+	margin-left: 70px;
+	color: #2E6DA4;
+}
+.dantupian-picture{
+	position: relative;
+	top: -300px;
+	left:25% ;
+	float: right;
+	width: 70%;
+	height: 100%;
+}
